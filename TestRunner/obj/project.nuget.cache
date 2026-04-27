@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "1m78wcUgbq4=",
+  "success": true,
+  "projectFilePath": "E:\\Repository\\GenerateurSDKOpenAPI3\\TestRunner\\TestRunner.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\HAIBONWA RIBEGA B\\.nuget\\packages\\microsoft.openapi\\1.6.29\\microsoft.openapi.1.6.29.nupkg.sha512",
+    "C:\\Users\\HAIBONWA RIBEGA B\\.nuget\\packages\\microsoft.openapi.readers\\1.6.29\\microsoft.openapi.readers.1.6.29.nupkg.sha512",
+    "C:\\Users\\HAIBONWA RIBEGA B\\.nuget\\packages\\sharpyaml\\2.1.1\\sharpyaml.2.1.1.nupkg.sha512",
+    "C:\\Users\\HAIBONWA RIBEGA B\\.nuget\\packages\\yamldotnet\\17.0.1\\yamldotnet.17.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

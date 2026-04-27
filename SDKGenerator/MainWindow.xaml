@@ -1,0 +1,44 @@
+<Window x:Class="SDKGenerator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="OpenAPI 3 SDK Generator" Height="450" Width="600"
+        WindowStartupLocation="CenterScreen">
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="OpenAPI 3 SDK Generator" FontSize="24" FontWeight="Bold" Margin="0,0,0,20" Grid.Row="0"/>
+
+        <!-- Input File -->
+        <StackPanel Orientation="Horizontal" Grid.Row="1" Margin="0,0,0,15">
+            <TextBlock Text="Fichier OpenAPI (JSON/YAML) :" Width="200" VerticalAlignment="Center"/>
+            <TextBox x:Name="TxtInputFile" Width="250" IsReadOnly="True" Margin="0,0,10,0" VerticalContentAlignment="Center"/>
+            <Button Content="Parcourir..." Width="80" Click="BtnBrowseInput_Click" Padding="5"/>
+        </StackPanel>
+
+        <!-- Output Folder -->
+        <StackPanel Orientation="Horizontal" Grid.Row="2" Margin="0,0,0,15">
+            <TextBlock Text="Dossier de sortie :" Width="200" VerticalAlignment="Center"/>
+            <TextBox x:Name="TxtOutputFolder" Width="250" IsReadOnly="True" Margin="0,0,10,0" VerticalContentAlignment="Center"/>
+            <Button Content="Parcourir..." Width="80" Click="BtnBrowseOutput_Click" Padding="5"/>
+        </StackPanel>
+
+        <!-- Options -->
+        <StackPanel Orientation="Horizontal" Grid.Row="3" Margin="0,0,0,20">
+            <TextBlock Text="Nom du SDK :" Width="200" VerticalAlignment="Center"/>
+            <TextBox x:Name="TxtSdkName" Width="250" Text="my_api_sdk" VerticalContentAlignment="Center" Padding="0,2"/>
+        </StackPanel>
+        
+        <!-- Logs -->
+        <TextBox x:Name="TxtLogs" Grid.Row="4" IsReadOnly="True" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" Background="#FAFAFA" Margin="0,0,0,20" Padding="5" FontFamily="Consolas"/>
+
+        <!-- Generate Button -->
+        <Button x:Name="BtnGenerate" Content="Générer le SDK Python (FastAPI + Tkinter)" Grid.Row="5" Height="40" FontSize="16" FontWeight="Bold" Background="#007ACC" Foreground="White" Click="BtnGenerate_Click" BorderThickness="0" Cursor="Hand"/>
+    </Grid>
+</Window>
