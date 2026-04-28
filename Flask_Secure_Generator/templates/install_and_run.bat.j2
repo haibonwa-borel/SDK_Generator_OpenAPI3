@@ -1,0 +1,16 @@
+@echo off
+echo ==========================================
+echo Initialisation de l'API Flask
+echo ==========================================
+
+echo [1/3] Creation de l'environnement virtuel...
+python -m venv venv
+
+echo [2/3] Activation de l'environnement virtuel et installation des dependances...
+call venv\Scripts\activate.bat
+pip install -r requirements.txt
+
+echo [3/3] Lancement de l'application Flask...
+python run.py
+
+pause

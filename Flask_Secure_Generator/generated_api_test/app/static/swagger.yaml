@@ -1,0 +1,26 @@
+openapi: 3.0.0
+info:
+  title: Sample Product API
+  version: 1.0.0
+components:
+  schemas:
+    Product:
+      type: object
+      properties:
+        id:
+          type: integer
+        name:
+          type: string
+        price:
+          type: number
+        in_stock:
+          type: boolean
+    Category:
+      type: object
+      properties:
+        id:
+          type: integer
+        title:
+          type: string
+        description:
+          type: string
